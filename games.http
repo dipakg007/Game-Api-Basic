@@ -1,0 +1,32 @@
+GET http://localhost:5003/games
+
+###
+GET http://localhost:5003/games/1
+
+###
+POST http://localhost:5003/games
+Content-Type: application/json
+
+{
+    "name": "Forza",
+    "genreId": 4,
+    "price": 20.10,
+    "releaseDate": "2021-09-30"
+}
+
+###
+PUT http://localhost:5003/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II",
+    "genreId": 4,
+    "price": 35.00,
+    "releaseDate": "2011-11-20"
+}
+
+###
+DELETE http://localhost:5003/games/1
+
+###
+GET http://localhost:5003/genres
